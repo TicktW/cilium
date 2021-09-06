@@ -5,7 +5,7 @@ go 1.15
 // direct dependencies
 require (
 	github.com/Azure/azure-sdk-for-go v50.0.0+incompatible
-	github.com/Azure/go-autorest/autorest v0.11.17
+	github.com/Azure/go-autorest/autorest v0.11.18
 	github.com/Azure/go-autorest/autorest/adal v0.9.13
 	github.com/Azure/go-autorest/autorest/azure/auth v0.5.6
 	github.com/Azure/go-autorest/autorest/to v0.4.0
@@ -37,11 +37,11 @@ require (
 	github.com/go-openapi/runtime v0.19.26
 	github.com/go-openapi/spec v0.20.3
 	github.com/go-openapi/strfmt v0.20.0
-	github.com/go-openapi/swag v0.19.14
+	github.com/go-openapi/swag v0.19.15
 	github.com/go-openapi/validate v0.20.1
 	github.com/gogo/protobuf v1.3.2
-	github.com/golang/protobuf v1.4.3
-	github.com/google/go-cmp v0.5.4
+	github.com/golang/protobuf v1.5.2
+	github.com/google/go-cmp v0.5.5
 	github.com/google/gopacket v1.1.19
 	github.com/google/gops v0.3.16
 	github.com/google/renameio v1.0.0
@@ -58,20 +58,20 @@ require (
 	github.com/mattn/go-shellwords v1.0.10
 	github.com/miekg/dns v1.0.14
 	github.com/morikuni/aec v1.0.0 // indirect
-	github.com/onsi/ginkgo v1.12.1
+	github.com/onsi/ginkgo v1.14.0
 	github.com/onsi/gomega v1.10.5
 	github.com/opencontainers/go-digest v1.0.0-rc1 // indirect
 	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/optiopay/kafka v0.0.0-20171218140449-a1e0071f1ce8
 	github.com/pmezard/go-difflib v1.0.0
-	github.com/prometheus/client_golang v1.9.0
+	github.com/prometheus/client_golang v1.11.0
 	github.com/prometheus/client_model v0.2.1-0.20200623203004-60555c9708c7
 	github.com/russross/blackfriday/v2 v2.1.0
 	github.com/sasha-s/go-deadlock v0.2.1-0.20190427202633-1595213edefa
 	github.com/servak/go-fastping v0.0.0-20160802140958-5718d12e20a0
 	github.com/shirou/gopsutil/v3 v3.21.2
-	github.com/sirupsen/logrus v1.7.0
-	github.com/spf13/cobra v1.1.1
+	github.com/sirupsen/logrus v1.8.1
+	github.com/spf13/cobra v1.1.3
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.7.1
 	github.com/stretchr/testify v1.7.0
@@ -79,36 +79,32 @@ require (
 	github.com/vishvananda/netns v0.0.0-20201230012202-c4f3ca719c73
 	go.etcd.io/etcd v0.5.0-alpha.5.0.20201125193152-8a03d2e9614b
 	go.uber.org/goleak v1.1.10
-	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad
-	golang.org/x/net v0.0.0-20210119194325-5f4716e94777
-	golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
-	golang.org/x/sys v0.0.0-20210217105451-b926d437f341
-	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e
-	golang.org/x/tools v0.0.0-20210108195828-e2f9c7f1fc8e
-	google.golang.org/genproto v0.0.0-20210126160654-44e461bb6506
-	google.golang.org/grpc v1.29.1
-	google.golang.org/protobuf v1.25.0
+	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83
+	golang.org/x/net v0.0.0-20210520170846-37e1c6afe023
+	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
+	golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac
+	golang.org/x/tools v0.1.2
+	google.golang.org/genproto v0.0.0-20210602131652-f16073e35f0c
+	google.golang.org/grpc v1.38.0
+	google.golang.org/protobuf v1.26.0
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 	gopkg.in/ini.v1 v1.62.0
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 	gopkg.in/yaml.v2 v2.4.0
-	k8s.io/api v0.20.4
-	k8s.io/apiextensions-apiserver v0.20.4
-	k8s.io/apimachinery v0.20.4
-	k8s.io/client-go v0.20.4
-	k8s.io/code-generator v0.20.4
-	k8s.io/klog/v2 v2.5.0
-	k8s.io/kube-openapi v0.0.0-20201113171705-d219536bb9fd
+	k8s.io/api v0.22.0
+	k8s.io/apiextensions-apiserver v0.22.0
+	k8s.io/apimachinery v0.22.0
+	k8s.io/client-go v0.22.0
+	k8s.io/code-generator v0.22.0
+	k8s.io/klog/v2 v2.9.0
+	k8s.io/kube-openapi v0.0.0-20210421082810-95288971da7e
 	// We specify the controller-tools version here to be the version of the
 	// fork below, so that when we generate CRDs, the generated CRD contains
 	// version number of the tool. We want the version number to match up with
 	// the fork, even though this specific version doesn't exist in upstream
 	// controller-tools.
 	sigs.k8s.io/controller-tools v0.3.1-0.20200716001835-4a903ddb7005
-	// Must be bound to at least this commit until a new release is made with
-	// https://github.com/kubernetes-sigs/structured-merge-diff/pull/173
-	// included.
-	sigs.k8s.io/structured-merge-diff/v4 v4.0.3-0.20201124161302-9f9c77085dec // indirect
 	sigs.k8s.io/yaml v1.2.0
 )
 
